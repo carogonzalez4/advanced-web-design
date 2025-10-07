@@ -122,7 +122,7 @@
 }
 /* ===== CONTAINER QUERIES ===== */
 /* When the container is narrow, change the card layout */
-@container portfolio-container (max-width: 600px) {
+@container portfolio-container (min-width: 600px) {
   .project-card {
     display: flex;
     flex-direction: row;
