@@ -154,6 +154,8 @@ nav {
   position: fixed;
   top: 0;
   z-index: 1000;
+  background: #029c7d;
+  height: 2%;
 }
 nav ul {
   list-style: none;
