@@ -267,3 +267,36 @@ footer a:hover {
 footer img {
   vertical-align: middle;
 }
+
+/* Images format*/
+
+.img-uniform {
+  width: 300px; /* todas tendrán este ancho */
+  height: auto; /* alto proporcional */
+  object-fit: cover; /* recorta si no encaja exacto */
+}
+
+.analysis-text img:nth-of-type(3) {
+  margin-top: 2rem; /* espacio extra antes de la tercera imagen */
+}
+
+/* Bold subtitles*/
+
+.analysis-text h3 {
+  font-weight: 700;
+}
+
+.analysis-text strong,
+.analysis-text b {
+  font-weight: 700;
+}
+
+.analysis-text {
+  font-synthesis-weight: auto;
+  font-variation-settings: normal;
+}
+
+.analysis-text em,
+.analysis-text i {
+  font-style: italic !important;
+}
