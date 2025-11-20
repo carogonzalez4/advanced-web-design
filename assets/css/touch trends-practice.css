@@ -277,3 +277,106 @@ body {
   object-fit: cover; /* Asegura que la imagen se ajuste sin deformarse */
   object-position: center 80%; /* Centra la imagen horizontal y verticalmente */
 }
+
+/* Demo 1: Typewriter Effect */
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: 3px solid #2d3748;
+  white-space: nowrap;
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 0;
+  animation: typewriter 4s steps(40) 1s forwards, blink 0.75s step-end infinite;
+}
+
+/* Demo 2: Pulsing Heart */
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.15);
+  }
+}
+
+.parent-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh; /* Full viewport height */
+}
+
+.heart {
+  font-size: 3rem;
+  color: #ef4444;
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+/* Demo 3: Pulse */
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(236, 72, 153, 0.7);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 20px rgba(236, 72, 153, 0);
+  }
+}
+
+.box-pulse {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #ec4899, #be185d);
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Demo 4: Fade In & Scale */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.box-fade {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, #4ade80, #22c55e);
+  border-radius: 12px;
+  animation: fadeInScale 0.8s ease-out;
+}
+.pulse-container {
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 20vh; /* Full viewport height for demonstration */
+}
